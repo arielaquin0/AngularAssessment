@@ -1,0 +1,19 @@
+<div class="home-content">
+  <div class="what-are-you-cont">
+    <div class="what-are-you">What are you</div>
+    <div class="here-to-do">here to do?</div>
+  </div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let item of items">
+      <div class="card-bg" >
+        <div class="bg">
+          <div class="img-placeholder-default">
+            <img [src]="item.image" alt="home internet">
+          </div>
+          <div class="title title-default">{{ item.title }}</div>
+          <span class="subtitle">{{ item.subtitle }}</span>
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>
